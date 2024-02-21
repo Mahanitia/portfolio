@@ -1,0 +1,319 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.root {
+  width: 100w;
+  height: auto;
+  border-radius: 10px;
+  /*background-color: rgb(59, 53, 53);*/
+  background-image: linear-gradient(35deg, #fefbf6 0%, #8cb9bd 78%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+}
+
+header {
+  background-color: rgb(251, 251, 251);
+  width: auto;
+  height: auto;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  animation: SlideTop 1s ease forwards;
+  animation-delay: 2s;
+}
+
+header li {
+  padding: 2cap;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: fixed;
+  margin-left: 10px;
+  background-color: beige;
+  padding: 5px;
+  border-radius: 10px;
+  animation: portflioanimation 1s ease forwards;
+  animation-delay: 2s;
+}
+
+header a:hover {
+  color: #8cb9bd;
+}
+
+section span {
+  position: absolute;
+  margin-top: -630px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 10cap;
+}
+
+section div {
+  border-style: solid;
+  border-color: white;
+  border-radius: 2cap;
+  padding: 200px;
+}
+
+.speech {
+  border-color: transparent;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: speech 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.section_1 {
+  display: flex;
+  background-color: wheat;
+  flex-direction: row;
+  justify-content: left;
+  height: 30cap;
+}
+
+section_1 div {
+  border-style: solid;
+  margin: 50px;
+  padding: 25px;
+  border-radius: 2cap;
+}
+
+section_1 .formation {
+  display: block;
+  border-color: transparent;
+  border-radius: 10px;
+  width: 50cap;
+  justify-items: left;
+}
+
+section_1 .formation p {
+  font-size: 50px;
+}
+
+section_1 .p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_2 {
+  display: flex;
+  height: 90vw;
+  flex-direction: row;
+  justify-content: left;
+  height: 30cap;
+}
+
+section_2 div {
+  border-style: solid;
+  margin: 50px;
+  padding: 25px;
+  border-radius: 2cap;
+}
+
+section_2 .experience p {
+  font-size: 50px;
+}
+
+section_2 .experience {
+  border-color: transparent;
+}
+
+section_2 .p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section_3 {
+  display: flex;
+  height: 9vw;
+  flex-direction: row;
+  justify-content: left;
+  height: 30cap;
+}
+
+section_3 div {
+  border-style: solid;
+  margin: 50px;
+  padding: 25px;
+  border-radius: 2cap;
+}
+
+section_3 .competence p {
+  font-size: 50px;
+}
+
+section_3 .competence {
+  border-color: transparent;
+}
+
+section_3 .p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.prenom {
+  display: flex;
+  animation: prenom 1s ease forwards;
+  animation-delay: 2s;
+}
+
+section .prenom:hover {
+  color: rgb(250, 250, 255);
+  background-image: url(../images/mahanitia.png);
+  background-size: cover;
+  background-position: 10px;
+  box-shadow: 10px 10px 10px rgb(1, 1, 1);
+  border-color: black;
+}
+
+section .speech:hover {
+  border-color: black;
+  box-shadow: 10px 10px 10px rgb(1, 1, 1);
+}
+
+footer {
+  text-align: center;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  padding: 2cap;
+}
+
+footer a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-left: -40px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+footer a:hover {
+  border-style: solid;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #8cb9bd;
+}
+
+.portfolio {
+  scroll-behavior: smooth;
+}
+
+/*@keyframes SlideTop {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}*/
+
+@keyframes portflioanimation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+/*
+@keyframes speech {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes prenom {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}*/
+
+@media screen and (max-width: 1400px) {
+  .root {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .root {
+    width: auto;
+  }
+
+  header ul {
+    padding: 0px;
+  }
+
+  section div {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .root {
+    width: auto;
+  }
+  .speech {
+    font-size: 15px;
+  }
+
+  section {
+    grid-column-gap: 1cap;
+  }
+
+  section div {
+    padding: 80px;
+  }
+
+  header li {
+    padding: 1cap;
+  }
+
+  header h1 {
+    position: absolute;
+    position: fixed;
+    margin-left: 8px;
+    margin-top: 15px;
+    background-color: beige;
+    padding: 3px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .root {
+    width: auto;
+  }
+  .speech {
+    font-size: 13px;
+  }
+
+  section {
+    align-items: center;
+    margin-left: -150px;
+  }
+
+  section div {
+    padding: 50px;
+  }
+}

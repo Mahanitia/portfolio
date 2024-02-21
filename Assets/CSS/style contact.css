@@ -1,0 +1,70 @@
+* {
+  margin: 20px;
+}
+
+.col-sm-8 {
+  text-align: left;
+}
+
+#root {
+  width: 100w;
+  height: auto;
+  background-image: linear-gradient(35deg, #8cb9bd 0%, #fefbf6 78%);
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.col-sm-8 a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  position: fixed;
+  margin-top: -65px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: beige;
+  margin-left: -90px;
+  border-radius: 10px;
+  padding: 5px;
+  animation: portflioanimation 1s ease forwards;
+  animation-delay: 2s;
+}
+
+#information {
+  justify-content: center;
+  align-items: center;
+}
+
+#information p {
+  font-size: 80px;
+  margin-top: 100px;
+  color: black;
+}
+
+#row-section {
+  margin-top: 50px;
+}
+
+#btn {
+  float: right;
+  margin-right: 80px;
+  padding: 1% 5% 1% 5%;
+  background-color: #8cb9bd;
+  border-color: transparent;
+}
+
+#floatingTextarea2 {
+  font-size: 20px;
+  border-color: black;
+}
+
+#cnt {
+  font-size: 20px;
+}
+
+@keyframes portflioanimation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
